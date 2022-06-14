@@ -38,6 +38,15 @@
     padding-bottom: 6rem;
 }
 
+.Logo {
+  width: auto;
+  height: auto;
+}
+
+.FQ {
+  margin: 0px;
+  padding: 0px;
+}
 
 /*** Button ***/
 .btn {
@@ -388,7 +397,7 @@
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    color: var(--primary); 
 }
 
 .footer .btn.btn-link {
