@@ -56,7 +56,7 @@
 
 .btn.btn-primary,
 .btn.btn-outline-primary:hover {
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .btn-square {
@@ -398,7 +398,7 @@
 
 .footer .btn.btn-social:hover {
     color: var(--primary); 
-} 
+}
 
 .footer .btn.btn-link {
     display: block;
