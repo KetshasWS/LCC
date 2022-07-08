@@ -111,9 +111,9 @@
                         <p><i class="fa fa-phone-alt me-3"></i>+44 0203 740 3193</p>
                         <p><i class="fa fa-envelope me-3"></i><a href="mailto:admin@lifestyle-consultancy.com?subject=Enquiries For Lifestyle Choice Consultancy"><u>admin@lifestyle-consultancy.com</u></a></p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href="#" target="_blank"><i class><img src="img/facebook-16Rev.png"></i></a>&nbsp;&nbsp;
-                            <a class="btn btn-outline-light btn-social" href="#" target="_blank"><i class><img src="img/instagram-16Alt.png"></i></a>&nbsp;&nbsp;
-                            <a class="btn btn-outline-light btn-social" href="#" target=""_blank"><i class><img width="24" height="24" src="img/white-twitter--icon-rev.png"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class><img src="img/facebook-16Rev.png"></i></a>&nbsp;&nbsp;
+                            <a class="btn btn-outline-light btn-social" href=""><i class><img src="img/instagram-16Alt.png"></i></a>&nbsp;&nbsp;
+                            <a class="btn btn-outline-light btn-social" href=""><i class><img width="24" height="24" src="img/white-twitter--icon-rev.png"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
@@ -122,7 +122,7 @@
                         <a class="btn btn-link" href="index.html#Contact">Contact Us</a>
                         <a class="btn btn-link" href="PrivacyPolicy.html">Privacy Policy</a>
                         <!--<a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a> //--> 
+                        <a class="btn btn-link" href="">Career</a> //-->
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Popular Link</h5>
@@ -136,8 +136,10 @@
                         <h5 class="text-white mb-4">Newsletter</h5>
                         <p>We Would Like To Keep You In The Loop ... <br><br>Sign Up Here.</p>
                         <div class="position-relative w-100 mt-3">
+                        <form action="https://formsubmit.co/admin@lifestyle-consultancy.com" method="POST" id="form-control">
                             <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                            <button onclick="myNewsletter()" type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -155,8 +157,8 @@
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
                                 <a href="index.html">Home</a>
-                                <a href="index.html#About">About</a>
-                                <a href="index.html#Contact">Contact Us</a>
+                                <a href="#About">About</a>
+                                <a href="#Contact">Contact Us</a>
                                 <a href="#">Sitemap</a>
                                 <!--<a href="">Help</a>
                                 <a href="">FAQs</a> //-->
@@ -181,10 +183,19 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="https://cdn.com/fontawesome/v6.1.1/js/all.js" data-auto-replace-svg="nest"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+function myNewsletter() {
+  let text = "Do You Want to Submit Your Email Address?.";
+  if (confirm(text) == true) {
+    alert("Congrats! ... You Are On Our Newsletter Subscription List.");
+  } else {
+    alert ("Sorry! Your Email Address hasn't gone through, Please Try Again!.");
+  }
+}
+</script>
 </body>
 
 </html>
